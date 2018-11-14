@@ -14,7 +14,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Authority extends Model
 {
-    use \Dimsav\Translatable\Translatable, BouncyTrait {
+    use \Dimsav\Translatable\Translatable, \Conner\Tagging\Taggable, BouncyTrait {
         \Dimsav\Translatable\Translatable::save insteadof BouncyTrait;
     }
 

@@ -44,8 +44,8 @@
         <div class="row" style="padding-top: 20px;">
             <div  class="col-sm-12 text-center alphabet sans">
                 @foreach (range('A', 'Z') as $char)
-                    <a href="{!! url_to('autori', ['first-letter' => $char]) !!}" class="{!! (Input::get('first-letter')==$char) ? 'active' : '' !!}" rel="{!! $char !!}">{!! $char !!}</a> &nbsp;
-                @endforeach
+<!--                     <a href="{!! url_to('autori', ['first-letter' => $char]) !!}" class="{!! (Input::get('first-letter')==$char) ? 'active' : '' !!}" rel="{!! $char !!}">{!! $char !!}</a> &nbsp;
+                @endforeach -->
                 {!! Form::hidden('first-letter', @$input['first-letter'], ['id'=>'first-letter']) !!}
                 {!! Form::hidden('sort_by', @$input['sort_by'], ['id'=>'sort_by']) !!}
             </div>
